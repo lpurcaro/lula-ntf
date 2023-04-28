@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/lucilapurcaro/lula-ntf/contracts/LulaNFT.sol": {
-      "lastModificationDate": 1682663422008,
-      "contentHash": "7aa40b6b9e3d0af907a35171cc48735f",
+      "lastModificationDate": 1682669862277,
+      "contentHash": "db7a87877ec1ad3994b3add1116f0f98",
       "sourceName": "contracts/LulaNFT.sol",
       "solcConfig": {
         "version": "0.7.3",

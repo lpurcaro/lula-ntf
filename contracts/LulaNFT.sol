@@ -13,15 +13,13 @@ contract LulaNFT is ERC721, Ownable {
     constructor() ERC721("LulaNFT", "LNFT") {}
 
     function mintNFT(
-        address recipient,
-        string memory tokenURI
-    ) public onlyOwner returns (uint256) {
-        _tokenIds.increment();
+        address to,
+        uint256 tokenId,
+        string memory uri
+    ) public payable virtual {
+        require(msg.value >= 10, "Not enough ETH sent; check price!");
 
-        uint256 newItemId = _tokenIds.current();
-        _mint(recipient, newItemId);
-        _setTokenURI(newItemId, tokenURI);
-
-        return newItemId;
+        _mint(to, tokenId);
+        _setTokenURI(tokenId, uri);
     }
 }
