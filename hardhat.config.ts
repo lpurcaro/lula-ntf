@@ -3,8 +3,9 @@
 */
 require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
+require("./tasks/nft");
 const { API_URL, PRIVATE_KEY } = process.env;
-module.exports = {
+export default {
    solidity: "0.7.3",
    defaultNetwork: "sepolia",
    networks: {
